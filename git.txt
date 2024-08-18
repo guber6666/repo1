@@ -1,0 +1,49 @@
+git --version
+
+git config --global user.name " Yang'
+git config --global user.email 123@gmail.com 
+
+git config --global credential.helper store
+git config --global --list
+
+工作区 ls
+暂存区 git ls-files
+仓库  git log  --oneline
+
+ssh : ssh-keygen -t rsa -C "这里换上你的邮箱"
+	c/Users/22692/.ssh/id_rsa
+
+1.创建仓库：git init / git clone
+		git init -b main
+		git init +仓库名称
+		git clone + 地址
+	查看文件 ：ls -a
+	cd .git
+	ls -altr
+删除仓库; rm -rf .git
+
+2.添加文件：
+	git add 文件名
+	git add *.txt    添加所有txt文件到 暂存区
+	git add .          添加当前目录all到 暂存区
+
+	git commit -m "功能1已经完成"
+	
+	git log   查看提交信息
+	git log  --oneline
+
+	git checkout HEAD 文件名称   //回复上一次提交
+
+3. 
+ 关联远程github 库：git remote add name1 git地址
+ 添加内容到远程库 : git pull name1 main/mster
+ 分支修改为main: git branch -m master main
+$ git push <远程主机名> <本地分支名>:<远程分支名>
+也就是
+$git push origin master:master
+提交成功。
+
+ 远程仓库添加：git push 
+ 拉去： git pull
+
+	

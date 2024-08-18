@@ -36,7 +36,7 @@ ssh : ssh-keygen -t rsa -C "这里换上你的邮箱"
 
 3. 
  关联远程github 库：git remote add name1 git地址
- 添加内容到远程库 : git pull name1 main/mster
+ 添加内容到远程库 : git push name1 main/mster
  分支修改为main: git branch -m master main
 $ git push <远程主机名> <本地分支名>:<远程分支名>
 也就是

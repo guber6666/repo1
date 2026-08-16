@@ -1,0 +1,38 @@
+{
+  "skill_name": "spec-agent-orchestrator",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "给登录接口增加幂等支持，具体怎么做我还没想清楚。先帮我梳理需求。",
+      "expected_output": "Uses grilling, asks one decision question with a recommendation, and does not create or execute a spec yet.",
+      "files": [],
+      "assertions": [
+        "Only one user decision question is asked",
+        "The question includes a recommended answer",
+        "No spec, issue, or coding agent run is created before shared understanding"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "需求已经澄清完了，进入 to-spec。",
+      "expected_output": "Asks every time whether to publish an issue plus local snapshot or create local-only Markdown, then confirms the testing seam before finalization.",
+      "files": [],
+      "assertions": [
+        "Both to-spec output modes are presented",
+        "Issue publication is not performed before the user chooses a mode",
+        "The testing seam requires user confirmation"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "选本地 Markdown 模式，spec 完成后用当前 Codex Agent 执行。",
+      "expected_output": "Creates a local immutable spec without issue or Git operations during spec production, asks for execution approval, and audits current-Codex execution.",
+      "files": [],
+      "assertions": [
+        "The spec is saved under .codex-agent-manager/specs with source_mode local-only",
+        "No issue is published and no Git command is run during spec production",
+        "Current Codex execution uses current-start/current-finish audit artifacts"
+      ]
+    }
+  ]
+}

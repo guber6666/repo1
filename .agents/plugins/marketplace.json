@@ -1,0 +1,20 @@
+{
+  "name": "guber6666-repo1",
+  "interface": {
+    "displayName": "Guber6666 Repo1"
+  },
+  "plugins": [
+    {
+      "name": "codex-agent-manager",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-agent-manager"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

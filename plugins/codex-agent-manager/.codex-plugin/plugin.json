@@ -1,0 +1,39 @@
+{
+  "name": "codex-agent-manager",
+  "version": "0.1.0",
+  "description": "Clarify coding requests, publish or save an executable spec, and run Codex or an external coding agent with auditable logs.",
+  "author": {
+    "name": "guber6666",
+    "url": "https://github.com/guber6666"
+  },
+  "homepage": "https://github.com/guber6666/repo1",
+  "repository": "https://github.com/guber6666/repo1",
+  "license": "MIT",
+  "keywords": [
+    "agent",
+    "orchestration",
+    "spec",
+    "kiro",
+    "cursor",
+    "claude"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Codex Agent Manager",
+    "shortDescription": "Clarify, spec, delegate, and verify coding work.",
+    "longDescription": "Codex Agent Manager uses grilling for adaptive requirements clarification, to-spec for issue-backed or local specifications, and an explicit executor choice between the current Codex Agent, Kiro CLI, Cursor Agent, and Claude Code.",
+    "developerName": "guber6666",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Clarify this request, then ask whether to enter to-spec.",
+      "Create an issue-backed or local-only spec for this change.",
+      "Choose Codex, Kiro, Cursor, or Claude to execute this spec."
+    ],
+    "brandColor": "#635BFF",
+    "websiteURL": "https://github.com/guber6666/repo1"
+  }
+}

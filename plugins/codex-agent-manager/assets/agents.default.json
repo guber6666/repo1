@@ -1,0 +1,39 @@
+{
+  "selection_order": ["claude", "cursor", "kiro"],
+  "agents": {
+    "claude": {
+      "description": "Claude Code CLI; strong for repository-wide reasoning and careful cross-file changes.",
+      "executables": ["claude"],
+      "args": [
+        "-p",
+        "--output-format",
+        "stream-json",
+        "--verbose",
+        "--permission-mode",
+        "acceptEdits"
+      ]
+    },
+    "cursor": {
+      "description": "Cursor Agent CLI; strong for fast editor-oriented implementation and iteration.",
+      "executables": ["agent", "cursor-agent"],
+      "args": [
+        "-p",
+        "--force",
+        "--output-format",
+        "stream-json",
+        "--trust",
+        "--workspace",
+        "{workspace}"
+      ]
+    },
+    "kiro": {
+      "description": "Kiro CLI; strong for explicit spec-driven feature implementation.",
+      "executables": ["kiro-cli"],
+      "args": [
+        "chat",
+        "--no-interactive",
+        "--trust-all-tools"
+      ]
+    }
+  }
+}
